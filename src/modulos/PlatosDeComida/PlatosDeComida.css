@@ -1,0 +1,49 @@
+/* Estilos generales para el contenedor */
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+  }
+  
+  /* Estilos para las tarjetas de categoría */
+  .category-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  /* Efecto hover */
+  .category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilos para las imágenes */
+  .category-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Estilos para el título */
+  .category-card h2 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #333;
+  }
+  
+  /* Estilos para la descripción */
+  .category-card p {
+    font-size: 1rem;
+    color: #666;
+    padding: 0 10px 20px;
+    line-height: 1.4;
+  }
+  

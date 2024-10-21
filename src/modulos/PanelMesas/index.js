@@ -1,0 +1,1 @@
+export { default } from './PanelMesas.jsx';

@@ -1,0 +1,131 @@
+.panel-mesas {
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f4f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .btn-redireccion {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btn-redireccion:hover {
+    background-color: #45a049;
+  }
+  
+  .title {
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  }
+  
+  .mesa-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .mesa {
+    width: 120px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .mesa-top {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .mesa-number {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .mesa-base {
+    width: 60px;
+    height: 20px;
+    background-color: #34495e;
+    margin-top: -10px;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .mesa-status {
+    margin-top: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .available .mesa-top {
+    background-color: #2ecc71;
+  }
+  
+  .occupied .mesa-top {
+    background-color: #e74c3c;
+  }
+  
+  .available .mesa-status {
+    color: #27ae60;
+  }
+  
+  .occupied .mesa-status {
+    color: #c0392b;
+  }
+  
+  .mesa:hover .mesa-top {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+  }
+  
+  @media (max-width: 600px) {
+    .mesa {
+      width: 100px;
+      height: 130px;
+    }
+  
+    .mesa-top {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .mesa-number {
+      font-size: 1.2em;
+    }
+  
+    .mesa-base {
+      width: 50px;
+      height: 15px;
+    }
+  
+    .mesa-status {
+      font-size: 0.9em;
+    }
+  }
+  
